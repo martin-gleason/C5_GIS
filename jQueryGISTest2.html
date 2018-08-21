@@ -44,7 +44,7 @@
 		<button type = "submit" class = "btn btn-primary" id = "btn">Find That District</button>
 		
 <script>
-	$( "form" ).submit(function( event ){
+	$( this ).submit(function( event ){
 		var address = $( this ).serializeArray();
 		alert("Button pushed");
 		$.each(address, function(i, val){
