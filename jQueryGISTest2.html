@@ -45,11 +45,7 @@
 		
 <script>
 	$( this ).submit(function( event ){
-		var address = $( this ).serializeArray();
-		alert("Button pushed");
-		$.each(address, function(i, val){
-			$("#test").append(val.name + ":" + val.value + " ");
-			});
+		var inputs = $( "#inner-box : input");
 	});
 
 </script>
