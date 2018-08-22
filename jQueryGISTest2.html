@@ -18,7 +18,7 @@
 <h1>Enter the address</h1>
 
 <div class = "inner-box">
-<form>
+<form id = "address-capture" action = "#">
 	<div class = "form-row">
 		<div class = "form-group col-md-6">
 			<label for="inputAddress1">Address</label>
@@ -44,13 +44,13 @@
 		<button type = "submit" class = "btn btn-primary" id = "btn">Find That District</button>
 		
 <script>
-	$( this ).submit(function( event ){
-		var inputs = $( "#inner-box : input");
+	$("#address-capture").submit(function(event){
+		var data = $("#address-capture :input").val();
+		console.log(data);
 	});
 
 </script>
 </form>
- 
 
 </div>
 <div id = "test"></div>
