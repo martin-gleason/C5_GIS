@@ -22,33 +22,35 @@
 	<div class = "form-row">
 		<div class = "form-group col-md-6">
 			<label for="inputAddress1">Address</label>
-			<input type = "text" class = "form-control" id = "formAddress1" placeholder = "Address, Line one...">
+			<input type = "text" class = "form-control" name = "address-line-one" id = "formAddress1" placeholder = "Address, Line one..." />
 		</div>
 		<div class = "form-group col-md-6">
 			<label for="inputAddress2">Address Line 2</label>
-			<input type = "text" class = "form-control" id = "formAddress2" placeholder = "Apt/Unit Number, etc">
+			<input type = "text" class = "form-control" name = "address-line-two" id = "formAddress2" placeholder = "Apt/Unit Number, etc" />
 		</div>
 		<div class = "form-group col-md-6">
 			<label for ="City">City</label>
-			<input type = "text" class = "form-control" id = "city" placeholder = "City">
+			<input type = "text" class = "form-control" name = "city" id = "city" placeholder = "City"/>
 		</div>
 		<div class = "form-group col-md-6">
 			<label for ="State">State</label> 
-			<input type = "text" class = "form-control" id = "state" placeholder = "State">
+			<input type = "text" class = "form-control" name = "state" id = "state" placeholder = "State"/>
 		</div>
 		<div class = "form-group col-md-6">
 			<label for ="Zip">Zip</label> 
-			<input type = "text" class = "form-control" id = "zip" placeholder = "5 Digit Zip">
+			<input type = "text" class = "form-control" name = "zip" id = "zip" placeholder = "5 Digit Zip"/>
 		</div>
 		</div>
 		<button type = "submit" class = "btn btn-primary" id = "btn">Find That District</button>
 		
 <script>
-	$("#address-capture").submit(function(event){
-		var data = $("#address-capture :input").val();
-		console.log(data);
-	});
-
+	$(function(){
+		$(this).on("submit", function(e){
+			e.preventDefault();
+			var data = $("#address-capture").serializeArray();
+			console.log(data);
+			});
+		});
 </script>
 </form>
 
