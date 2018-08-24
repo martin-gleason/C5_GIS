@@ -21,3 +21,5 @@ var inputs = $("form").each(function(){
 		console.log(data);
 	});
 	//this works ^^^ but gets one line.
+	
+	
