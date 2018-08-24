@@ -1,1 +1,1 @@
-<?php header( 'Location: /JQueryGISTest2.html'); ?>
+<?php header( 'Location: JQueryGISTest2.html'); ?>
