@@ -1,0 +1,1 @@
+<?php header( 'Location: /JQueryGISTest2.html'); ?>

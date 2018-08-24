@@ -6,6 +6,7 @@
 	<meta name="generator" content="BBEdit 12.1" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://js.arcgis.com/4.8/"></script>
+	<script src = "geocoding_google.js"></script>
 	<link rel="stylesheet" type = "text/css" href =  "../../css/forms.css"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--- <script src = "capture-data.js"></script> --->
@@ -15,7 +16,7 @@
 </head>
 <body>
 
-<h1>Enter the address</h1>
+<h1>Enter the address</h1sc
 
 <div class = "inner-box">
 <form id = "address-capture" action = "#">
@@ -41,9 +42,10 @@
 			<input type = "text" class = "form-control" name = "zip" id = "zip" placeholder = "5 Digit Zip"/>
 		</div>
 		</div>
-		<button type = "submit" class = "btn btn-primary" id = "btn">Find That District</button>
+		<button type = "submit" class = "btn btn-primary" name = "btn" id = "btn">Find That District</button>
 		
 <script>
+
 	$(function(){
 		$(this).on("submit", function(e){
 			e.preventDefault();
@@ -51,6 +53,12 @@
 			console.log(data);
 			});
 		});
+
+	$("#btn").click(function(){
+		location.href = "https:maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key" + key;
+
+	});
+
 </script>
 </form>
 
