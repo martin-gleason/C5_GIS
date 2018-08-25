@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nobile|Spectral|Lato');
+
+
+
+:root {
+	--blue: #193993;
+  --grey: #9b9292;
+  --black: #0e0705;
+  --green: #a5d3c1;
+  --gold: #eebf48;
+  --ping: #eebf48;
+}
+
+
+
+h1{
+	font-family: Lato, sans-serif;
+	color: #193993;
+	font-size: 1.9em;
+	text-align: center;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h2{
+	font-family: Lato, sans-serif;
+	color:   #193993;
+	font-size: 1.75em;
+	font-style: italic;
+	text-align: center;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h3{
+font-family: Lato, sans-serif;
+	color: #193993; 
+	font-style: italic;
+	text-align: center;
+	font-size: 1.5em;
+		text-rendering: optimizelegibility !important;
+
+}
+
+ul,ol,dl,p{
+	font-family: 'Nobile', sans-serif;
+  text-size: 1rem;
+	text-align: left;
+}
+
+.image-half{
+	height: 50%;
+	width: 50%;
+}
+
+.image-quarter{
+	height: 25%;
+	width: 25%;
+}
+
+.image-ten{
+	height: 10%;
+	width: 10%;
+	}
+
+.left{
+	text-align:left !important;
+	}
+
+.section{
+	margin-bottom: 10px;
+	color: var(--grey);
+	}
+	
+.inner-box{
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: absolute;
+	}
+
+.input[type="text"]{
+	color: blue;
+}
+

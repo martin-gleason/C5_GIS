@@ -8,6 +8,9 @@ var url_base = "https://maps.googleapis.com/maps/api/geocode/outputFormat?"
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> master
