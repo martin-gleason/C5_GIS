@@ -23,3 +23,27 @@ var inputs = $("form").each(function(){
 	//this works ^^^ but gets one line.
 	
 	
+
+
+
+$(this).submit(function(event){
+		var address = $("form").serializeArray();
+				alert("Button pushed");
+				console.log(address);
+				$.each(address, function(i, val){
+				$("#test").append(val.name + ":" + val.value + " ");
+				});
+});
+
+
+$( this).submit(function(event){
+	console.log($( this ).serializeArray());
+	event.preventDefault();
+});
+
+
+
+
+
+ 	$("#btn").click(function(){
+		location.href = "https:maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key" + key;});
