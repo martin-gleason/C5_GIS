@@ -7,7 +7,7 @@ var address = "";
 		e.preventDefault();
 		address = $("#formAddress1").val() + " + " + $("#city").val() + " + " +
 		$("#state").val()  + " + " + $("#zip").val();
-		alert(address));
+		alert(address);
 	});
 
 
