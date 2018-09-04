@@ -16,7 +16,7 @@ var address = "";
 //send query to geocode service with button push. Right now, this going to a google tutorial
 
 	$("#btn").click(function(){
- 			location.href = "https:maps.googleapis.com/maps/api/geocode/json?address=" + 
+ 			location.href = "https://maps.googleapis.com/maps/api/geocode/json?address=" + 
  			address;
 		});
 });
