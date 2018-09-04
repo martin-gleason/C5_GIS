@@ -7,7 +7,7 @@ var address = "";
 		e.preventDefault();
 		address = $("#formAddress1").val() + " + " + $("#city").val() + " + " +
 		$("#state").val()  + " + " + $("#zip").val();
-		alert(address);
+		alert(address));
 	});
 
 
@@ -16,7 +16,8 @@ var address = "";
 //send query to geocode service with button push. Right now, this going to a google tutorial
 
 	$("#btn").click(function(){
- 			codeAddress(address);
+ 			location.href = "https:maps.googleapis.com/maps/api/geocode/json?address=" + 
+ 			address;
 		});
 });
 
