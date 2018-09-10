@@ -1,22 +1,21 @@
-//Capture data as JSON array
+//Capture data
 $(function(){
 
 var address = "";
 
 	$(this).on("submit", function(e){
+		address = $("#formAddress1").val() + "+" + $("#city").val() + "+" +
+		$("#state").val()  + "+" + $("#zip").val();
 		e.preventDefault();
-		address = $("#formAddress1").val() + " + " + $("#city").val() + " + " +
-		$("#state").val()  + " + " + $("#zip").val();
-		alert(address);
+		codeAddress(address);
 	});
 
 
-	
 
-//send query to geocode service with button push. Right now, this going to a google tutorial
+//send query to geocode service with button push.
 
 	$("#btn").click(function(){
- 			codeAddress(address)
+ 			
 		});
 });
 
