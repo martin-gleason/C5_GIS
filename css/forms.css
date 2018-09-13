@@ -30,6 +30,7 @@ h1{
 }
 
 .inner-box input{
+}
 
 
 .section{
@@ -37,4 +38,13 @@ h1{
 	padding: 2px;
 	background-color: var(--greyblue);
 	width: 100%
+}
+
+.test{
+	font-family: Lato, sans-serif;
+	margin: 5px;
+	padding: 2px 2px 2px 2px;
+	background-color: var(--greyblue);
+	text-align: center;
+	
 }

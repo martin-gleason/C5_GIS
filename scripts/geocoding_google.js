@@ -1,5 +1,4 @@
-//API key and JSON Work
-
+//API key and geocoding Work
 
 var key = "AIzaSyCdNaEzVGrwgTU1dW9N34dNLdF2uTeyrmE";
 
