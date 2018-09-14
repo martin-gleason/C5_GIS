@@ -8,6 +8,7 @@ var geocoder = new google.maps.Geocoder();
 
 
 function codeAddress(x){
+	$("div.test").prepend(" ");
 	space = new RegExp(/\s/g);	
 	address = x.replace(space, "+");
 	console.log(address);
@@ -19,4 +20,10 @@ function codeAddress(x){
 				alert("The geocode status was: " + status)};
 			
 			});
+};
+
+
+function load_map(){
+	
+
 };

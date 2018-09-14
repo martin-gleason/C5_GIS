@@ -21,9 +21,14 @@ h1{
 		background-color: var(--greyblue);
 		margin-left: 9em;
 		padding: 3px 3px 3px 3px;
-		margin: 3px
+		margin: 3px;
 }
-	}
+
+html, body {
+        height: 100%;
+        padding: 2px 2px 2px 2px;
+}
+
 
 .inner-box label {
 	position: absolute;
@@ -47,4 +52,11 @@ h1{
 	background-color: var(--greyblue);
 	text-align: center;
 	
+}
+
+.district{
+	background-color: var(--greyblue);
+	height: 100%;
+	margin: 2px;
+	padding:2px;
 }
