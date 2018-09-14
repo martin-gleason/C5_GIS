@@ -57,6 +57,7 @@ html, body {
 .district{
 	background-color: var(--greyblue);
 	height: 100%;
+	width: 100%
 	margin: 2px;
 	padding:2px;
 }
