@@ -8,7 +8,7 @@ function initMap(){
 		center: {lat: 41.8676354, lng:-87.68105109999999},
 		zoom: 11
 	});
-var data = map.data.loadGeoJson("http://127.0.0.1:9090/CPD-districts.geojson");
+var data = map.data.loadGeoJson("CPD-districts.geojson");
 map.data.addGeoJson(data);
 
 
