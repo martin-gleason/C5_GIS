@@ -1,2 +1,4 @@
 ingore_draft.js
 node_modules/*
+
+css/key_and_base.js
